@@ -6,11 +6,42 @@
 @import "tailwindcss/utilities";
 
 /*************************** 
-  ------ Global Styles -----
+  ------ Variables -----
 ****************************/
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark-cyan: hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$footer-cyan: hsl(168, 34%, 41%);
+$neutral-dark-blue: hsl(212, 27%, 19%);
+$neutral-dark-gray: hsl(213, 9%, 39%);
+$neutral-gray: hsl(232, 10%, 55%);
+$neutral-light-gray: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+/****************************** 
+  --- Media Query ----
+*******************************/
+
+footer {
+  background-color: $footer-cyan;
+}
+
 @media (max-width: 767px) {
   #navbar-toggle {
     display: block;
+  }
+
+  #navbar-menu {
+    display: none;
+  }
+
+  #navbar-menu li {
+    color: $neutral-gray;
+  }
+
+  .contact-btn {
+    background-color: $yellow;
   }
 }
 
@@ -18,8 +49,12 @@
   #navbar-toggle {
     display: none;
   }
-}
 
-/****************************** 
-  --- Media Query - Navbar ---
-*******************************/
+  #navbar-menu {
+    display: flex !important;
+  }
+
+  .contact-btn {
+    background-color: $white;
+  }
+}
