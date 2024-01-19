@@ -29,7 +29,33 @@
     />
   </head>
   <body>
-    <h1 class="">Hello world</h1>
+    <!-- Nav Bar -->
+    <nav class="bg-red-600 flex justify-between">
+      <img src="/images/logo.svg" alt="Logo of Sunnyside company" />
+      <button
+        id="navbar-toggle"
+        aria-label="Navigation menu toggle"
+        type="button"
+      >
+        &#9776;
+      </button>
+      <ul
+        class="hidden absolute right-10 top-10 bg-green-500 md:static md:flex"
+        id="navbar-menu"
+      >
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <button type="button">Contact</button>
+      </ul>
+    </nav>
+    <section
+      class="hero bg-cover bg-center"
+      style="background-image: url('/path/to/your/image.jpg')"
+    >
+      <h1 class="text-white text-center">Your Title Here</h1>
+    </section>
+    <!-- Scripts -->
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -1,3 +1,25 @@
+/*************************** 
+   ------ Imports ------
+****************************/
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+/*************************** 
+  ------ Global Styles -----
+****************************/
+@media (max-width: 767px) {
+  #navbar-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  #navbar-toggle {
+    display: none;
+  }
+}
+
+/****************************** 
+  --- Media Query - Navbar ---
+*******************************/
