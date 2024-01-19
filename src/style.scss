@@ -12,7 +12,7 @@ $soft-red: hsl(7, 99%, 70%);
 $yellow: hsl(51, 100%, 49%);
 $dark-cyan: hsl(167, 40%, 24%);
 $dark-blue: hsl(198, 62%, 26%);
-$footer-cyan: hsl(168, 34%, 41%);
+$footer-cyan: hsl(168, 43%, 66%);
 $neutral-dark-blue: hsl(212, 27%, 19%);
 $neutral-dark-gray: hsl(213, 9%, 39%);
 $neutral-gray: hsl(232, 10%, 55%);
@@ -23,8 +23,16 @@ $white: hsl(0, 0%, 100%);
   --- Media Query ----
 *******************************/
 
-footer {
+.footer-color {
   background-color: $footer-cyan;
+}
+
+.footer-logo path {
+  fill: $dark-cyan;
+}
+
+.footer-sns-links > li:hover {
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -38,6 +46,21 @@ footer {
 
   #navbar-menu li {
     color: $neutral-gray;
+  }
+
+  .graphic-banner {
+    height: 30rem;
+    background-image: url("images/mobile/image-graphic-design.jpg");
+  }
+
+  .photo-banner {
+    height: 30rem;
+    background-image: url("images/mobile/image-photography.jpg");
+  }
+
+  .hero {
+    background-image: url("images/mobile/image-header.jpg");
+    height: 100vh;
   }
 
   .contact-btn {
@@ -54,7 +77,42 @@ footer {
     display: flex !important;
   }
 
+  .hero {
+    background-image: url("images/desktop/image-header.jpg");
+  }
+
   .contact-btn {
     background-color: $white;
+  }
+
+  .graphic-banner {
+    background-image: url("images/desktop/image-graphic-design.jpg");
+    height: 25rem;
+  }
+
+  .photo-banner {
+    background-image: url("images/desktop/image-photography.jpg");
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-wrapper {
+    width: 81vw;
+    margin: 0 auto;
+  }
+
+  .graphic-banner {
+    height: 35rem;
+  }
+
+  .photo-banner {
+    height: 35rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .main-wrapper {
+    width: 65vw;
+    margin: 0 auto;
   }
 }
