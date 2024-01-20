@@ -10,3 +10,15 @@ toggleBtn.addEventListener("click", function () {
     menu.style.display = "none";
   }
 });
+
+window.addEventListener("scroll", function () {
+  const nav = document.querySelector("nav")!;
+  const header = document.querySelector("header")!;
+  const headerHeight = header.offsetHeight;
+
+  if (window.scrollY > headerHeight - 250) {
+    nav.classList.add("nav-hidden");
+  } else {
+    nav.classList.remove("nav-hidden");
+  }
+});

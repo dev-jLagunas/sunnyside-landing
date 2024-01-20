@@ -23,6 +23,11 @@ $white: hsl(0, 0%, 100%);
   --- Media Query ----
 *******************************/
 
+.nav-hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
 .footer-color {
   background-color: $footer-cyan;
 }
@@ -87,7 +92,7 @@ $white: hsl(0, 0%, 100%);
 
   .graphic-banner {
     background-image: url("images/desktop/image-graphic-design.jpg");
-    height: 25rem;
+    height: 30rem;
   }
 
   .photo-banner {
