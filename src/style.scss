@@ -57,16 +57,16 @@
 
   .graphic-banner {
     height: 30rem;
-    background-image: url("images/mobile/image-graphic-design.jpg");
+    background-image: url("/images/mobile/image-graphic-design.jpg");
   }
 
   .photo-banner {
     height: 30rem;
-    background-image: url("images/mobile/image-photography.jpg");
+    background-image: url("/images/mobile/image-photography.jpg");
   }
 
   .hero {
-    background-image: url("~images/mobile/image-header.jpg");
+    background-image: url("/images/mobile/image-header.jpg");
     height: 100vh;
   }
 
@@ -88,7 +88,7 @@
   }
 
   .hero {
-    background-image: url("images/desktop/image-header.jpg");
+    background-image: url("/images/desktop/image-header.jpg");
   }
 
   .contact-btn {
@@ -97,12 +97,12 @@
 
   //Switch to Desktop Images
   .graphic-banner {
-    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-image: url("/images/desktop/image-graphic-design.jpg");
     height: 30rem;
   }
 
   .photo-banner {
-    background-image: url("images/desktop/image-photography.jpg");
+    background-image: url("/images/desktop/image-photography.jpg");
     height: 30rem;
   }
 }
