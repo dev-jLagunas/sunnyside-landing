@@ -43,19 +43,19 @@
         id="navbar-toggle"
         aria-label="Navigation menu toggle"
         type="button"
-        class="toggle-btn text-3xl text-white"
+        class="text-3xl text-white"
       >
         &#9776;
       </button>
       <ul
-        class="hidden navbar-design absolute text-center space-y-4 right-10 pt-8 top-20 z-50 text-xl font-600 bg-white w-72 h-72 md:w-max md:h-min md:pt-0 md:space-y-0 md:static md:space-x-4 md:bg-transparent md:text-base md:text-white md:items-center"
+        class="hidden navbar-custom-design absolute text-center space-y-4 right-10 pt-8 top-20 z-50 text-xl font-600 bg-white w-72 h-72 md:w-max md:h-min md:pt-0 md:space-y-0 md:static md:space-x-4 md:bg-transparent md:text-base md:text-white md:items-center"
         id="navbar-menu"
       >
-        <li id="nav-about" data-translate="About"><a href="#">About</a></li>
-        <li id="nav-services" data-translate="Services">
+        <li data-translate="About"><a href="#">About</a></li>
+        <li data-translate="Services">
           <a href="#">Services</a>
         </li>
-        <li id="nav-projects" data-translate="Projects">
+        <li data-translate="Projects">
           <a href="#">Projects</a>
         </li>
         <button
@@ -91,35 +91,24 @@
               media="(min-width: 768px)"
               srcset="images/desktop/image-transform.jpg"
             />
-            <img
-              id="brand-image"
-              src="images/mobile/image-transform.jpg"
-              alt="Brand image"
-              class=""
-            />
+            <img src="images/mobile/image-transform.jpg" alt="Brand image" />
           </picture>
         </figure>
         <div
           class="text-center md:order-1 px-2 lg:px-20 lg:text-start 2xl:px-32"
         >
           <h2
-            id="brand-title"
             class="font-fraunces text-4xl mt-8 mb-4 text-slate-800 lg:mt-20 2xl:mt-40"
             data-translate="Brand"
           >
             Transform your brand
           </h2>
-          <p
-            id="Brand_Description"
-            class="text-slate-500 mb-8"
-            data-translate="Brand_Description"
-          >
+          <p class="text-slate-500 mb-8" data-translate="Brand_Description">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
           <button
-            id="brand-button"
             class="font-fraunces mb-8 border-b-2 border-b-yellow-400 hover:border-b-4 hover:border-yellow-400"
             data-translate="Learn_More"
           >
@@ -133,7 +122,6 @@
       <section class="md:grid md:grid-cols-2">
         <figure>
           <img
-            id="standout-image"
             src="images/mobile/image-stand-out.jpg"
             alt="Stand out image"
             class="mx-auto"
@@ -141,23 +129,17 @@
         </figure>
         <div class="text-center px-2 lg:px-20 lg:text-start lg:mt-20 2xl:px-32">
           <h2
-            id="standout-title"
             class="font-fraunces text-4xl mt-8 mb-4 text-slate-800 2xl:mt-20"
             data-translate="Stand_Out"
           >
             Stand out to the right audience
           </h2>
-          <p
-            id="standout-description"
-            class="text-slate-500 mb-8"
-            data-translate="standout-description"
-          >
+          <p class="text-slate-500 mb-8" data-translate="Stand_Out_Description">
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we will build and
             extend your brand in digital places.
           </p>
           <button
-            id="standout-button"
             class="font-fraunces mb-8 border-b-2 border-red-400 hover:border-b-4 hover:border-red-400"
             data-translate="Learn_More"
           >
@@ -173,14 +155,12 @@
           class="graphic-banner object-contain bg-cover bg-center flex flex-col justify-end items-center mx-auto lg:px-20"
         >
           <h3
-            id="graphic-title"
             class="font-fraunces text-2xl text-teal-900"
             data-translate="Graphic"
           >
             Graphic Design
           </h3>
           <p
-            id="graphic-desc"
             class="px-4 mb-4 mt-4 text-teal-800 text-center text-sm pb-8 lg:leading-5"
             data-translate="Graphic_Description"
           >
@@ -196,16 +176,14 @@
           class="photo-banner object-contain bg-cover bg-top flex flex-col justify-end items-center lg:px-20"
         >
           <h3
-            id="photo-title"
             class="font-fraunces text-2xl text-cyan-900"
             data-translate="Photography"
           >
             Photography
           </h3>
           <p
-            id="photo-desc"
             class="px-4 pb-8 mb-4 mt-4 text-cyan-800 text-center text-sm"
-            data-translate="Photo_Description"
+            data-translate="Photography_Description"
           >
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
@@ -216,13 +194,12 @@
       <!-- Testimonials Section Start -->
       <section class="text-center py-8 md:py-24">
         <h3
-          id="testimonials-title"
           class="font-fraunces text-gray-400 tracking-wider"
           data-translate="Client_Testimonials"
         >
           CLIENT TESTIMONIALS
         </h3>
-        <div id="testimonials-container" class="md:flex">
+        <div class="md:flex">
           <article class="testimonial">
             <figure>
               <img
@@ -233,38 +210,26 @@
               />
             </figure>
             <blockquote
-              id="testimonial-text-1"
               class="text-slate-600 mb-2 px-4 md:text-xs md:px-0 md:mb-0 md:leading-5 lg:px-20"
               data-translate="Client_Testimonials_A"
             >
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
             </blockquote>
-            <p
-              id="testimonial-name-1"
-              class="font-fraunces text-xl font-600 mt-4"
-            >
-              Emily R.
-            </p>
-            <p
-              id="testimonial-position-1"
-              class="text-slate-400"
-              data-translate="Marketing_Director"
-            >
+            <p class="font-fraunces text-xl font-600 mt-4">Emily R.</p>
+            <p class="text-slate-400" data-translate="Marketing_Director">
               Marketing Director
             </p>
           </article>
           <article class="testimonial">
             <figure>
               <img
-                id="testimonial-image-2"
                 src="images/image-thomas.jpg"
                 alt="Client photo"
                 class="rounded-full h-20 mx-auto my-8"
               />
             </figure>
             <blockquote
-              id="testimonial-text-2"
               class="text-slate-600 px-4 md:text-xs md:leading-5 lg:px-20"
               data-translate="Client_Testimonials_B"
             >
@@ -272,48 +237,28 @@
               our brand&apos;s success made it a satisfying and enjoyable
               experience.
             </blockquote>
-            <p
-              id="testimonial-name-2"
-              class="font-fraunces text-xl font-600 mt-4"
-            >
-              Thomas S.
-            </p>
-            <p
-              id="testimonial-position-2"
-              class="text-slate-400"
-              data-translate="Chief_Operating_Officer"
-            >
+            <p class="font-fraunces text-xl font-600 mt-4">Thomas S.</p>
+            <p class="text-slate-400" data-translate="Chief_Operating_Officer">
               Chief Operating Officer
             </p>
           </article>
           <article class="testimonial">
             <figure>
               <img
-                id="testimonial-image-3"
                 src="images/image-jennie.jpg"
                 alt="Client photo"
                 class="rounded-full h-20 mx-auto my-8"
               />
             </figure>
             <blockquote
-              id="testimonial-text-3"
               class="px-4 text-slate-600 md:text-xs md:leading-5 lg:px-20"
               data-translate="Client_Testimonials_C"
             >
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
             </blockquote>
-            <p
-              id="testimonial-name-3"
-              class="font-fraunces text-xl font-600 mt-4"
-            >
-              Jennie F.
-            </p>
-            <p
-              id="testimonial-position-3"
-              class="text-slate-400"
-              data-translate="Business_Owner"
-            >
+            <p class="font-fraunces text-xl font-600 mt-4">Jennie F.</p>
+            <p class="text-slate-400" data-translate="Business_Owner">
               Business Owner
             </p>
           </article>
@@ -344,36 +289,28 @@
       <ul
         class="text-teal-700 flex justify-evenly md:w-max md:mx-auto md:space-x-6"
       >
-        <li id="nav-about" class="hover:text-white" data-translate="About">
+        <li class="hover:text-white" data-translate="About">
           <a href="#">About</a>
         </li>
-        <li
-          id="nav-services"
-          class="hover:text-white"
-          data-translate="Services"
-        >
+        <li class="hover:text-white" data-translate="Services">
           <a href="#">Services</a>
         </li>
-        <li
-          id="nav-projects"
-          class="hover:text-white"
-          data-translate="Projects"
-        >
+        <li class="hover:text-white" data-translate="Projects">
           <a href="#">Projects</a>
         </li>
       </ul>
       <ul class="flex justify-center space-x-4 py-6 footer-sns-links">
         <li class="">
-          <img src="public/images/icon-facebook.svg" alt="" />
+          <img src="public/images/icon-facebook.svg" alt="Facebook Icon" />
         </li>
         <li class="">
-          <img src="public/images/icon-instagram.svg" alt="" />
+          <img src="public/images/icon-instagram.svg" alt="Instagram Icon" />
         </li>
         <li class="">
-          <img src="public/images/icon-twitter.svg" alt="" />
+          <img src="public/images/icon-twitter.svg" alt="Twitter Icon" />
         </li>
         <li class="">
-          <img src="public/images/icon-pinterest.svg" alt="" />
+          <img src="public/images/icon-pinterest.svg" alt="Pinterest Icon" />
         </li>
       </ul>
     </footer>
