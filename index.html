@@ -31,13 +31,15 @@
   <body class="font-barlow">
     <!-- Nav Bar Start -->
     <nav
-      class="fixed px-8 top-0 bg-transparent flex justify-between items-center w-screen p-4 md:px-20"
+      class="fixed bg-transparent py-4 flex justify-around md:justify-between lg:justify-evenly items-center w-screen md:px-8"
     >
       <img src="/images/logo.svg" alt="Logo of Sunnyside company" class="h-7" />
-      <div class="flex divide-x-2 rounded text-white divide-gray-100 text-xs">
-        <button type="button" class="en-btn px-3 py-1">EN</button>
-        <button type="button" class="jp-btn px-3 py-1">JP</button>
-        <button type="button" class="sp-btn px-3 py-1">SP</button>
+      <div
+        class="flex divide-x-2 rounded text-white divide-white text-xs bg-white bg-opacity-20"
+      >
+        <button type="button" class="en-btn px-2 py-1 text-gray-100">EN</button>
+        <button type="button" class="jp-btn px-2 py-1 text-gray-100">JP</button>
+        <button type="button" class="sp-btn px-2 py-1 text-gray-100">SP</button>
       </div>
       <button
         id="navbar-toggle"
@@ -48,7 +50,7 @@
         &#9776;
       </button>
       <ul
-        class="hidden navbar-custom-design absolute text-center space-y-4 right-10 pt-8 top-20 z-50 text-xl font-600 bg-white w-72 h-72 md:w-max md:h-min md:pt-0 md:space-y-0 md:static md:space-x-4 md:bg-transparent md:text-base md:text-white md:items-center"
+        class="hidden navbar-custom-design absolute text-center space-y-4 right-5 pt-8 top-20 z-50 text-xl font-600 bg-white w-72 h-72 md:w-max md:h-min md:pt-0 md:space-y-0 md:static md:space-x-8 md:bg-transparent md:text-sm md:text-white md:items-center"
         id="navbar-menu"
       >
         <li data-translate="About"><a href="#">About</a></li>
@@ -60,7 +62,7 @@
         </li>
         <button
           type="button"
-          class="contact-btn text-black font-fraunces px-8 py-4 rounded-full md:text-sm md:px-6 md:py-2"
+          class="contact-btn text-black text-xs font-fraunces px-8 py-4 rounded-full md:text-sm md:px-6 md:py-2"
           data-translate="Contact"
         >
           CONTACT

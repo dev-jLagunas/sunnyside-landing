@@ -1,8 +1,8 @@
 export const translationData = {
   About: {
     en: "About",
-    es: "Acerca de",
-    jp: "約",
+    es: "Nosotros",
+    jp: "私について",
   },
   Services: {
     en: "Services",
@@ -17,7 +17,7 @@ export const translationData = {
   Contact: {
     en: "Contact",
     es: "Contacto",
-    jp: "連絡先",
+    jp: "お問い合わせ",
   },
   Creatives: {
     en: "WE ARE CREATIVES",
@@ -51,7 +51,7 @@ export const translationData = {
   },
   Graphic: {
     en: "Graphic Design",
-    es: "Diseño gráfico",
+    es: "Diseño Gráfico",
     jp: "グラフィックデザイン",
   },
   Graphic_Description: {
@@ -101,7 +101,7 @@ export const translationData = {
   },
   Business_Owner: {
     en: "Business Owner",
-    es: "Dueño del negocio",
+    es: "Dueño de Negocio",
     jp: "ビジネスオーナー",
   },
 };
