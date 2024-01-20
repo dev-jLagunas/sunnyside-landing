@@ -1,20 +1,15 @@
+// IMPORTS
 import "./style.scss";
 import { translationData } from "./data/translation-data";
 
-let toggleBtn = document.getElementById("navbar-toggle")!;
-let menu = document.getElementById("navbar-menu")!;
+//DOM ELEMENTS
 const enBtn = document.querySelector(".en-btn");
 const jpBtn = document.querySelector(".jp-btn");
 const spBtn = document.querySelector(".sp-btn");
+const toggleBtn = document.getElementById("navbar-toggle")!;
+const menu = document.getElementById("navbar-menu")!;
 
-toggleBtn.addEventListener("click", function () {
-  if (menu.style.display !== "block") {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
-});
-
+//HIDE NAVBAR ON SCROLL
 window.addEventListener("scroll", function () {
   const nav = document.querySelector("nav")!;
   const header = document.querySelector("header")!;
@@ -27,12 +22,19 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Function to translate the page
+//TOGGLE NAVBAR MOBILE MENU
+toggleBtn.addEventListener("click", function () {
+  if (menu.style.display !== "block") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+});
+
+//MULTI-LANGUAGE TRANSLATION
 function translatePage(language: "en" | "jp" | "es") {
-  // Get all the elements that need to be translated
   const elementsToTranslate = document.querySelectorAll("[data-translate]");
 
-  // Translate each element
   elementsToTranslate.forEach((element) => {
     const key = element.getAttribute("data-translate");
     if (key && translationData.hasOwnProperty(key)) {
@@ -44,9 +46,7 @@ function translatePage(language: "en" | "jp" | "es") {
   });
 }
 
-console.log(translationData);
-
-// Add event listeners to the buttons
+//MULTI-LANGUAGE TRANSLATION EVENT LISTENERS
 enBtn?.addEventListener("click", () => translatePage("en"));
 jpBtn?.addEventListener("click", () => translatePage("jp"));
 spBtn?.addEventListener("click", () => translatePage("es"));
