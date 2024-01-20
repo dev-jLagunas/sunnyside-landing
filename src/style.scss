@@ -5,40 +5,30 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/*************************** 
-  ------ Variables -----
-****************************/
-$soft-red: hsl(7, 99%, 70%);
-$yellow: hsl(51, 100%, 49%);
-$dark-cyan: hsl(167, 40%, 24%);
-$dark-blue: hsl(198, 62%, 26%);
-$footer-cyan: hsl(168, 43%, 66%);
-$neutral-dark-blue: hsl(212, 27%, 19%);
-$neutral-dark-gray: hsl(213, 9%, 39%);
-$neutral-gray: hsl(232, 10%, 55%);
-$neutral-light-gray: hsl(210, 4%, 67%);
-$white: hsl(0, 0%, 100%);
-
-/****************************** 
-  --- Media Query ----
-*******************************/
+// Navbar Opacity Transition
 
 .nav-hidden {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
+// Footer Styles
+
 .footer-color {
-  background-color: $footer-cyan;
+  background-color: hsl(168, 43%, 66%);
 }
 
 .footer-logo path {
-  fill: $dark-cyan;
+  fill: hsl(167, 40%, 24%);
 }
 
 .footer-sns-links > li:hover {
   color: white;
 }
+
+/**************************************
+  --- Media Queries ---- Mobile First
+***************************************/
 
 @media (max-width: 767px) {
   #navbar-toggle {
@@ -50,7 +40,19 @@ $white: hsl(0, 0%, 100%);
   }
 
   #navbar-menu li {
-    color: $neutral-gray;
+    color: hsl(232, 10%, 55%);
+  }
+
+  //Mobile Toggle Menu Custom "Pointer" Arrow Style
+  .navbar-design::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 40px;
+    height: 30px;
+    background: white;
+    clip-path: polygon(100% 0%, 0% 150%, 100% 100%);
   }
 
   .graphic-banner {
@@ -69,10 +71,13 @@ $white: hsl(0, 0%, 100%);
   }
 
   .contact-btn {
-    background-color: $yellow;
+    background-color: hsl(51, 100%, 49%);
   }
 }
 
+/**************************************
+  --- Media Queries ---- Tablet
+***************************************/
 @media (min-width: 768px) {
   #navbar-toggle {
     display: none;
@@ -87,9 +92,10 @@ $white: hsl(0, 0%, 100%);
   }
 
   .contact-btn {
-    background-color: $white;
+    background-color: hsl(0, 0%, 100%);
   }
 
+  //Switch to Desktop Images
   .graphic-banner {
     background-image: url("images/desktop/image-graphic-design.jpg");
     height: 30rem;
@@ -97,9 +103,13 @@ $white: hsl(0, 0%, 100%);
 
   .photo-banner {
     background-image: url("images/desktop/image-photography.jpg");
+    height: 30rem;
   }
 }
 
+/**************************************
+  --- Media Queries ---- Desktop
+***************************************/
 @media screen and (min-width: 1440px) {
   .main-wrapper {
     width: 81vw;

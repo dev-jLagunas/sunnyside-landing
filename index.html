@@ -33,7 +33,12 @@
     <nav
       class="fixed px-8 top-0 bg-transparent flex justify-between items-center w-screen p-4 md:px-20"
     >
-      <img src="/images/logo.svg" alt="Logo of Sunnyside company" />
+      <img src="/images/logo.svg" alt="Logo of Sunnyside company" class="h-7" />
+      <div class="flex divide-x-2 rounded text-white divide-gray-100 text-xs">
+        <button type="button" class="en-btn px-3 py-1">EN</button>
+        <button type="button" class="jp-btn px-3 py-1">JP</button>
+        <button type="button" class="sp-btn px-3 py-1">SP</button>
+      </div>
       <button
         id="navbar-toggle"
         aria-label="Navigation menu toggle"
@@ -43,15 +48,20 @@
         &#9776;
       </button>
       <ul
-        class="hidden absolute text-center space-y-4 right-7 pt-8 top-16 z-50 text-xl font-600 bg-white w-64 h-64 md:w-max md:h-min md:pt-0 md:space-y-0 md:static md:space-x-4 md:bg-transparent md:text-base md:text-white md:items-center"
+        class="hidden navbar-design absolute text-center space-y-4 right-10 pt-8 top-20 z-50 text-xl font-600 bg-white w-72 h-72 md:w-max md:h-min md:pt-0 md:space-y-0 md:static md:space-x-4 md:bg-transparent md:text-base md:text-white md:items-center"
         id="navbar-menu"
       >
-        <li id="nav-about"><a href="#">About</a></li>
-        <li id="nav-services"><a href="#">Services</a></li>
-        <li id="nav-projects"><a href="#">Projects</a></li>
+        <li id="nav-about" data-translate="About"><a href="#">About</a></li>
+        <li id="nav-services" data-translate="Services">
+          <a href="#">Services</a>
+        </li>
+        <li id="nav-projects" data-translate="Projects">
+          <a href="#">Projects</a>
+        </li>
         <button
           type="button"
           class="contact-btn text-black font-fraunces px-8 py-4 rounded-full md:text-sm md:px-6 md:py-2"
+          data-translate="Contact"
         >
           CONTACT
         </button>
@@ -63,7 +73,10 @@
     <header
       class="hero bg-cover bg-center h-96 flex flex-col justify-center items-center"
     >
-      <h1 class="text-white text-center font-fraunces text-5xl mb-4">
+      <h1
+        class="text-white text-center font-fraunces text-5xl mb-4"
+        data-translate="Creatives"
+      >
         WE ARE CREATIVES
       </h1>
       <img src="images/icon-arrow-down.svg" alt="Down pointing arrow" />
@@ -92,10 +105,15 @@
           <h2
             id="brand-title"
             class="font-fraunces text-4xl mt-8 mb-4 text-slate-800 lg:mt-20 2xl:mt-40"
+            data-translate="Brand"
           >
             Transform your brand
           </h2>
-          <p id="brand-description" class="text-slate-500 mb-8">
+          <p
+            id="Brand_Description"
+            class="text-slate-500 mb-8"
+            data-translate="Brand_Description"
+          >
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
@@ -103,6 +121,7 @@
           <button
             id="brand-button"
             class="font-fraunces mb-8 border-b-2 border-b-yellow-400 hover:border-b-4 hover:border-yellow-400"
+            data-translate="Learn_More"
           >
             LEARN MORE
           </button>
@@ -124,17 +143,23 @@
           <h2
             id="standout-title"
             class="font-fraunces text-4xl mt-8 mb-4 text-slate-800 2xl:mt-20"
+            data-translate="Stand_Out"
           >
             Stand out to the right audience
           </h2>
-          <p id="standout-description" class="text-slate-500 mb-8">
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
+          <p
+            id="standout-description"
+            class="text-slate-500 mb-8"
+            data-translate="standout-description"
+          >
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we will build and
+            extend your brand in digital places.
           </p>
           <button
             id="standout-button"
             class="font-fraunces mb-8 border-b-2 border-red-400 hover:border-b-4 hover:border-red-400"
+            data-translate="Learn_More"
           >
             LEARN MORE
           </button>
@@ -147,12 +172,17 @@
         <section
           class="graphic-banner object-contain bg-cover bg-center flex flex-col justify-end items-center mx-auto lg:px-20"
         >
-          <h3 id="graphic-title" class="font-fraunces text-2xl text-teal-900">
+          <h3
+            id="graphic-title"
+            class="font-fraunces text-2xl text-teal-900"
+            data-translate="Graphic"
+          >
             Graphic Design
           </h3>
           <p
             id="graphic-desc"
             class="px-4 mb-4 mt-4 text-teal-800 text-center text-sm pb-8 lg:leading-5"
+            data-translate="Graphic_Description"
           >
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients
@@ -165,12 +195,17 @@
         <section
           class="photo-banner object-contain bg-cover bg-top flex flex-col justify-end items-center lg:px-20"
         >
-          <h3 id="photo-title" class="font-fraunces text-2xl text-cyan-900">
+          <h3
+            id="photo-title"
+            class="font-fraunces text-2xl text-cyan-900"
+            data-translate="Photography"
+          >
             Photography
           </h3>
           <p
             id="photo-desc"
             class="px-4 pb-8 mb-4 mt-4 text-cyan-800 text-center text-sm"
+            data-translate="Photo_Description"
           >
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
@@ -183,6 +218,7 @@
         <h3
           id="testimonials-title"
           class="font-fraunces text-gray-400 tracking-wider"
+          data-translate="Client_Testimonials"
         >
           CLIENT TESTIMONIALS
         </h3>
@@ -199,6 +235,7 @@
             <blockquote
               id="testimonial-text-1"
               class="text-slate-600 mb-2 px-4 md:text-xs md:px-0 md:mb-0 md:leading-5 lg:px-20"
+              data-translate="Client_Testimonials_A"
             >
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
@@ -209,7 +246,11 @@
             >
               Emily R.
             </p>
-            <p id="testimonial-position-1" class="text-slate-400">
+            <p
+              id="testimonial-position-1"
+              class="text-slate-400"
+              data-translate="Marketing_Director"
+            >
               Marketing Director
             </p>
           </article>
@@ -225,6 +266,7 @@
             <blockquote
               id="testimonial-text-2"
               class="text-slate-600 px-4 md:text-xs md:leading-5 lg:px-20"
+              data-translate="Client_Testimonials_B"
             >
               Sunnyside&apos;s enthusiasm coupled with their keen interest in
               our brand&apos;s success made it a satisfying and enjoyable
@@ -236,7 +278,11 @@
             >
               Thomas S.
             </p>
-            <p id="testimonial-position-2" class="text-slate-400">
+            <p
+              id="testimonial-position-2"
+              class="text-slate-400"
+              data-translate="Chief_Operating_Officer"
+            >
               Chief Operating Officer
             </p>
           </article>
@@ -252,6 +298,7 @@
             <blockquote
               id="testimonial-text-3"
               class="px-4 text-slate-600 md:text-xs md:leading-5 lg:px-20"
+              data-translate="Client_Testimonials_C"
             >
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
@@ -262,7 +309,11 @@
             >
               Jennie F.
             </p>
-            <p id="testimonial-position-3" class="text-slate-400">
+            <p
+              id="testimonial-position-3"
+              class="text-slate-400"
+              data-translate="Business_Owner"
+            >
               Business Owner
             </p>
           </article>
@@ -293,11 +344,21 @@
       <ul
         class="text-teal-700 flex justify-evenly md:w-max md:mx-auto md:space-x-6"
       >
-        <li id="nav-about" class="hover:text-white"><a href="#">About</a></li>
-        <li id="nav-services" class="hover:text-white">
+        <li id="nav-about" class="hover:text-white" data-translate="About">
+          <a href="#">About</a>
+        </li>
+        <li
+          id="nav-services"
+          class="hover:text-white"
+          data-translate="Services"
+        >
           <a href="#">Services</a>
         </li>
-        <li id="nav-projects" class="hover:text-white">
+        <li
+          id="nav-projects"
+          class="hover:text-white"
+          data-translate="Projects"
+        >
           <a href="#">Projects</a>
         </li>
       </ul>
